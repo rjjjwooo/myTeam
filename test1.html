@@ -20,7 +20,13 @@
             area[value] = 1;
         }
     }
-
+    for(const key in area){
+        if(area[key] > maxLength){
+            maxLength = area[key];
+            maxKey = key;
+        }
+    }
+    console.log(`최빈값:${maxKey}`);
     console.log(area);
 </script>
 </body>
